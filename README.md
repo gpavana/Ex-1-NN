@@ -37,12 +37,44 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
+```python
+import pandas as pd                                                 # Importing Libraries
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+df=pd.read_csv("Churn_Modelling.csv",index_col="RowNumber")         # Read the dataset from drive
+df.head()
+df.isnull().sum()                                                   # Finding Missing Values
+df.duplicated().sum()                                               # Check For Duplicates
+df=df.drop(['Surname', 'Geography','Gender'], axis=1)               # Remove Unnecessary Columns
+scaler=StandardScaler()                                             # Normalize the dataset
+df=pd.DataFrame(scaler.fit_transform(df))
+df.head()
+X,Y=df.iloc[:,:-1].values ,df.iloc[:,-1].values                     # Split the dataset into input and output
+print('Input:\n',X,'\nOutput:\n',Y) 
+Xtrain,Xtest,Ytrain,Ytest = train_test_split(X, Y, test_size=0.2)   # Splitting the data for training & Testing
+print("Xtrain:\n" ,Xtrain, "\nXtest:\n", Xtest)                     # X Train and Test
+print("\nYtrain:\n" ,Ytrain, "\nYtest:\n", Ytest)                   # Y Train and Test
 
+```
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+## DATASET:
+![image](https://github.com/gpavana/Ex-1-NN/assets/118787343/1b7123eb-1408-4af2-a357-2e2739ebf144)
 
+## NULL VALUES:
+![image](https://github.com/gpavana/Ex-1-NN/assets/118787343/16575620-8d65-44ed-ad2f-de132827d1e1)
+## NORMALIZED DATA:
+![image](https://github.com/gpavana/Ex-1-NN/assets/118787343/a30a4c48-66cf-44ef-85cf-ddb6f80a4293)
+
+## DUPLICATED VALUES:
+![image](https://github.com/gpavana/Ex-1-NN/assets/118787343/c2449810-0b28-40b8-8e0f-cbc873af4130)
+## DATA SPLITTING:
+![image](https://github.com/gpavana/Ex-1-NN/assets/118787343/05411d0b-49df-48bb-987a-3fc81a992984)
+
+## TRAINING DATA AND TESTING DATA:
+![image](https://github.com/gpavana/Ex-1-NN/assets/118787343/d8e4b026-edcc-448a-ab1d-a8672017bef8)
 
 ## RESULT:
 Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
