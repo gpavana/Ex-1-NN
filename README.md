@@ -12,15 +12,16 @@ Pre-processing refers to the transformations applied to our data before feeding 
 Data Preprocessing is the process of making data suitable for use while training a machine learning model. The dataset initially provided for training might not be in a ready-to-use state, for e.g. it might not be formatted properly, or may contain missing or null values.Solving all these problems using various methods is called Data Preprocessing.<br><br>
 **Need of Data Preprocessing :**
 For achieving better results from the applied model in Machine Learning projects the format of the data has to be in a proper manner. Some specified Machine Learning model needs information in a specified format, for example, Random Forest algorithm does not support null values, therefore to execute random forest algorithm null values have to be managed from the original raw data set.
-**Developed By: PAVANA.G**<br>
-**Register No: 212222230105**<br>
+
 ### ALGORITHM:
 STEP 1:Importing the libraries.<BR>
 STEP 2:Importing the dataset.<BR>
-STEP 3:Taking care of missing data.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  **Developed By: ROHIT JAIN D**<br>
-STEP 4:Encoding categorical data.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Register No: 212222230120**<br>
+STEP 3:Taking care of missing data<br>
+STEP 4:Encoding categorical data.<br>
 STEP 5:Normalizing the data.<BR>
 STEP 6:Splitting the data into test and train.<BR>
+**Developed By: PAVANA.G**<br>
+**Register No: 212222230105**<br>
 ###  PROGRAM:
 ```Python
 import pandas as pd                                                 # Importing Libraries
