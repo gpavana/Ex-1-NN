@@ -1,6 +1,7 @@
 # EX-01 Introduction to Kaggle and Data preprocessing
+### DATE:25.02.2024
 ### AIM:
-To perform Data preprocessing in a data set downloaded from Kaggle. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**DATE:25.02.2024**
+To perform Data preprocessing in a data set downloaded from Kaggle. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 ### EQUIPMENTS REQUIRED:
 Hardware – PCs
 Anaconda – Python 3.7 Installation / Google Colab /Jupiter Notebook
